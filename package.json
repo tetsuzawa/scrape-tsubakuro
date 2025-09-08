@@ -9,12 +9,15 @@
   "scripts": {
     "start": "bun run src/index.ts",
     "check": "bun run src/index.ts --month 9 --day 15",
-    "build": "bunx tsc -p .",
-    "playwright:install": "bunx playwright install chromium"
+    "build": "bun build src/index.ts --outdir dist --target bun",
+    "playwright:install": "bunx playwright install chromium",
+    "deploy": "wrangler deploy",
   },
   "dependencies": {
-    "playwright": "^1.47.2",
-    "linkedom": "^0.16.11"
+    "chromium-bidi": "^8.1.0",
+    "electron": "^38.0.0",
+    "linkedom": "^0.16.11",
+    "playwright": "^1.47.2"
   },
   "devDependencies": {
     "typescript": "^5.5.4",
