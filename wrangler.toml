@@ -1,0 +1,19 @@
+name = "scrape-tsubakuro"
+main = "src/worker.ts"
+compatibility_date = "2025-09-07"
+
+[triggers]
+crons = [
+  "*/10 * * * *",
+]
+
+[vars]
+# 既定の監視日（必要に応じて変更）
+TARGET_MONTH = 9
+TARGET_DAY = 15
+
+
+[observability]
+# Workers Logs 機能の有効化設定
+[observability.logs]
+enabled = true
