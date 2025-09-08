@@ -11,7 +11,7 @@
     "check": "bun run src/index.ts --month 9 --day 15",
     "build": "bun build src/index.ts --outdir dist --target bun",
     "playwright:install": "bunx playwright install chromium",
-    "deploy": "wrangler deploy",
+    "deploy": "wrangler deploy"
   },
   "dependencies": {
     "chromium-bidi": "^8.1.0",
