@@ -10,7 +10,7 @@ crons = [
 [vars]
 # 既定の監視日（必要に応じて変更）
 TARGET_MONTH = 9
-TARGET_DAY = 15
+TARGET_DAY = 21
 
 
 [observability]
