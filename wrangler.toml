@@ -3,9 +3,9 @@ main = "src/worker.ts"
 compatibility_date = "2025-09-07"
 
 [triggers]
-crons = [
-  "*/10 * * * *",
-]
+#crons = [
+#  "*/10 * * * *",
+#]
 
 [vars]
 # 既定の監視日（必要に応じて変更）
